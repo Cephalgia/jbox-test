@@ -11,7 +11,7 @@ import org.jbox2d.dynamics.World;
  */
 public class Utils {
 
-    static final World world = new World(new Vec2(0.0f, -20.0f));
+    static final World world = new World(new Vec2(0.0f, -200.0f));
     static final int WIDTH = 600;
     static final int HEIGHT = 600;
 
@@ -55,7 +55,6 @@ public class Utils {
 
         FixtureDef fd = new FixtureDef();
         fd.shape = ps;
-
         BodyDef bd = new BodyDef();
         bd.position= new Vec2(0.0f,-10f);
 

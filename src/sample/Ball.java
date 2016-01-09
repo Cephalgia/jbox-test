@@ -26,6 +26,7 @@ public class Ball {
 
 
     private Color color;
+
     public Ball(float posX, float posY, int radius, Color color){
         this.posX = posX;
         this.posY = posY;
@@ -56,14 +57,14 @@ public class Ball {
         bd.position.set(posX, posY);
 
         CircleShape cs = new CircleShape();
-        cs.m_radius = radius * 0.1f;  //We need to convert radius to JBox2D equivalent
+        cs.m_radius = radius * 0.17f;  //We need to convert radius to JBox2D equivalent
 
         // Create a fixture for ball
         FixtureDef fd = new FixtureDef();
         fd.shape = cs;
         fd.density = 0.6f;
         fd.friction = 0.3f;
-        fd.restitution = 0.8f;
+        fd.restitution = 0.2f;
 
         /**
          * Virtual invisible JBox2D body of ball. Bodies have velocity and position.
